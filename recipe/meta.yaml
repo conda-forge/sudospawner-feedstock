@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: sudospawner
@@ -7,7 +7,7 @@ package:
 source:
   fn: sudospawner-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/s/sudospawner/sudospawner-{{ version }}.tar.gz
-  sha256: 132a58a46ac665c360445b500e3494668a7031192b7f1279d36b52da28fb7fc4
+  sha256: 7a5a29481d127b601307d013803183a2829a9f9c7260e7be661a7ff14fca548f
 
 build:
   number: 0
