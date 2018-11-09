@@ -14,9 +14,8 @@ Summary: Enables JupyterHub to spawn single-user notebook servers without being 
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/sudospawner-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/sudospawner-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/sudospawner-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/sudospawner-feedstock)
-![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/sudospawner-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/sudospawner-feedstock)
 
 Current release info
 ====================
