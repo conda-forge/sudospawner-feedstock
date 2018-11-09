@@ -10,9 +10,9 @@ source:
   sha256: 5dbddd8164e05e4bb3a31eeb1a5baf5a5c6268f1cd14b3f063cde609b8bfbbe1
 
 build:
-  number: 1000
-  skip: true  # [win or py2k]
+  number: 1
   script: pip install --no-deps .
+  noarch: python
 
 requirements:
   build:
