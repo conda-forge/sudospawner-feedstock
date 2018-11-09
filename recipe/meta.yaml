@@ -25,6 +25,8 @@ requirements:
 test:
   imports:
     - sudospawner
+  commands:
+    - test -f $PREFIX/bin/sudospawner
 
 about:
   home: https://github.com/jupyterhub/sudospawner
