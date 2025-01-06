@@ -6,23 +6,26 @@ package:
 
 source:
   fn: sudospawner-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/s/sudospawner/sudospawner-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/s/sudospawner/sudospawner-{{ version }}.tar.gz
   sha256: 5dbddd8164e05e4bb3a31eeb1a5baf5a5c6268f1cd14b3f063cde609b8bfbbe1
 
 build:
-  number: 1
+  number: 2
   script: pip install --no-deps .
   noarch: python
 
 requirements:
-  build:
-    - python >=3.5
+  host:
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.5
+    - python >={{ python_min }}
     - jupyterhub >=0.4
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - sudospawner
   commands:
