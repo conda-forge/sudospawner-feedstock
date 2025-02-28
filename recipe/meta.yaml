@@ -10,13 +10,15 @@ source:
   sha256: 5dbddd8164e05e4bb3a31eeb1a5baf5a5c6268f1cd14b3f063cde609b8bfbbe1
 
 build:
-  number: 2
+  number: 3
   script: pip install --no-deps .
   noarch: python
+  entry_points:
+    - sudospawner = sudospawner.mediator:main
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python {{ python_min }}.*
     - pip
     - setuptools
   run:
@@ -25,11 +27,12 @@ requirements:
 
 test:
   requires:
-    - python {{ python_min }}
+    - python {{ python_min }}.*
   imports:
     - sudospawner
   commands:
     - test -f $PREFIX/bin/sudospawner
+    - sudospawner --help
 
 about:
   home: https://github.com/jupyterhub/sudospawner
