@@ -23,7 +23,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - jupyterhub >=0.4
+    - jupyterhub-base >=4
 
 test:
   requires:
