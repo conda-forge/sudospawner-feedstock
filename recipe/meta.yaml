@@ -1,4 +1,4 @@
-{% set version = "0.5.2" %}
+{% set version = "1.0.0" %}
 
 package:
   name: sudospawner
@@ -7,10 +7,10 @@ package:
 source:
   fn: sudospawner-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/s/sudospawner/sudospawner-{{ version }}.tar.gz
-  sha256: 5dbddd8164e05e4bb3a31eeb1a5baf5a5c6268f1cd14b3f063cde609b8bfbbe1
+  sha256: 0f80ee90f4fb8927ee5b09ffbda354e730bef75759ff47e62010168a3b6a20b8
 
 build:
-  number: 3
+  number: 0
   script: pip install --no-deps .
   noarch: python
   entry_points:
@@ -23,7 +23,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - jupyterhub >=0.4
+    - jupyterhub-base >=4
 
 test:
   requires:
